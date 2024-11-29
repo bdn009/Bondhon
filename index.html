@@ -3,264 +3,1507 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ali BaBa shop</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oregano:ital@0;1&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oregano:ital@0;1&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <title>Nest Shop</title>
 </head>
-<body>
-    <header class="bg-[#F9F6E2]">
-        <div class="container mx-auto flex justify-between">
-            <div class="text-center w-[700px] my-auto">
-                <p class="font-medium text-4xl">--- Sale Fever ---</p>
-                <h1 class="font-bold text-6xl mt-11 mb-16">Purchase TK 200 or above & get <span class="text-[#E527B2]">20% off</span></h1>
-                <div>
-                    <p class="font-medium">Use promo code<button class="px-7 py-4 uppercase mx-3 text-white font-semibold rounded-lg bg-[#E527B2]">Sale200</button></p>
-                </div>
+<body class="font-[lato]">
+    <header>
+        <div class="w-[85%] m-auto flex justify-between font-[lato] text-[13px] font-medium text-[#7E7E7E] py-2" >
+           <div>
+             <ul class="flex">
+                <li class="pr-5">About Us</li>
+                <li class="px-5">My Account</li>
+                <li class="px-5">Wishlist</li>
+                <li class="px-5">Order Tracking</li>
+             </ul>
             </div>
-            <div >
-                <img src="https://i.ibb.co.com/PhNxqB3/Summer.png" alt="">
+            <div class="flex ">
+                <p class="px-5 ">Need help? Call Us: <span class="text-[#3BB77E]"> +0911 119911</span></p>
+                <select>
+                    <option>English</option>
+                    <option>Bangla</option>
+                    <option>Koeran</option>
+                </select>
+                <select>
+                    <option>USD</option>
+                    <option>EUR</option>
+                    <option>BDT</option>
+                </select>
             </div>
         </div>
     </header>
-    <section class="bg-[#1111]">
-        <div class="container mx-auto flex justify-between pt-28">
-            <div class="w-[1080px] ">
-                <h2 class="text-[40px] font-semibold uppercase">kitchenware</h2>
-                <div class="flex justify-between mt-[32px] mb-[56px]">
-                        <div class="card bg-white w-[340px] h-[400px] shadow-xl">
-                            <div class="w-[300px] h-[200px] m-auto mt-6 bg-[#1111] rounded-lg">
-                              <img
-                                class="mx-auto py-5"
-                                src="https://i.ibb.co.com/dGpK4wW/kitchenware-1.png"
-                                alt="Shoes"/>
-                            </div>
-                            <div onclick="prod1(this)" class="card-body items-center text-center">
-                              <div class="rating gap-1">
-                                <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
-                                <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400"  />
-                                <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" />
-                                <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400" checked="checked" />
-                                <input type="radio" name="rating-3" class="mask mask-heart bg-green-300" />
-                              </div>
-                              <h2 class="card-title">K. Accessories</h2>
-                              <p class="font-semibold">39.00 USD</p>
-                            </div>
+
+    <section class="border-t border-b border-[#b6b6b6]">
+        <div class="w-[85%] m-auto flex justify-between py-8 ">
+            <div>
+                <img src="https://i.ibb.co.com/k6N1KHH/19.png" alt="">
+            </div>
+            <div class="my-auto">
+                <div class="border border-[#BCE3C9]   h-[50px] relative bg-white rounded-[5px] justify-start items-start inline-flex">
+                    <div class="w-[135px] justify-center items-start gap-[0.5rem] inline-flex">
+                        <div class="w-[105px] h-[18px] text-[#253d4e] text-sm font-bold font-['Quicksand'] leading-[50px] pr-2">
+                        <select class="focus:outline-none ">
+                            <option selected>All Categories</option>
+                            <option>Electronics</option>
+                            <option>Cosmetics</option>
+                        </select>
                         </div>
-                        <div class="card bg-white w-[340px] h-[400px] shadow-xl">
-                          <div class="w-[300px] h-[200px] m-auto mt-6 bg-[#1111] rounded-lg">
-                            <img
-                              class="mx-auto py-5"
-                              src="https://i.ibb.co.com/ypwtz5W/kitchenware-3.png"
-                              alt="Shoes"/>
-                          </div>
-                          <div onclick="prod1(this)" class="card-body items-center text-center">
-                            <div class="rating gap-1">
-                              <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
-                              <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400"  />
-                              <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" />
-                              <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400" checked="checked" />
-                              <input type="radio" name="rating-3" class="mask mask-heart bg-green-300" />
-                            </div>
-                            <h2 class="card-title">K. Accessories</h2>
-                            <p class="font-semibold">25.00 USD</p>
-                          </div>
+                        <div class="w-px h-5 my-[15px] bg-[#cacaca]"></div>
+                    </div>
+                    <div class="w-[535px] h-[50px]  justify-center items-center inline-flex">
+                        <div class="w-[533px] self-stretch  justify-start items-center inline-flex" >
+                            <input type="text" placeholder="Search for items..."  class="focus:outline-none w-[500px]"></input>
+                            <img class="w-[1.5rem] m-3" src="https://i.ibb.co.com/gJVqy17/icons8-search-50.png" alt="">
                         </div>
-                        <div class="card bg-white w-[340px] h-[400px] shadow-xl">
-                        <div class="w-[300px] h-[200px] m-auto mt-6 bg-[#1111] rounded-lg">
-                          <img
-                            class="mx-auto py-5"
-                            src="https://i.ibb.co.com/0y3c9KF/kitchenware-2.png"
-                            alt="Shoes"/>
-                        </div>
-                        <div onclick="prod1(this)" class="card-body items-center text-center">
-                          <div class="rating gap-1">
-                            <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
-                            <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400"  />
-                            <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" />
-                            <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400" checked="checked" />
-                            <input type="radio" name="rating-3" class="mask mask-heart bg-green-300" />
-                          </div>
-                          <h2 class="card-title">Home Cocker</h2>
-                          <p class="font-semibold">49.00 USD</p>
-                        </div>
-                        </div>
-                </div>
-                <h2 class="text-[40px] font-semibold uppercase">Sportswear</h2>
-                <div class="flex justify-between mt-[32px] mb-[56px]">
-                        <div class="card bg-white w-[340px] h-[400px] shadow-xl">
-                            <div class="w-[300px] h-[200px] m-auto mt-6 bg-[#1111] rounded-lg">
-                              <img
-                                class="mx-auto py-5 w-[165px]"
-                                src="https://i.ibb.co.com/gM8c6Q8/sportswear1.png"
-                                alt="Shoes"/>
-                            </div>
-                            <div onclick="prod1(this)" class="card-body items-center text-center">
-                              <div class="rating gap-1">
-                                <input type="radio" name="rating-3" class="mask mask-heart bg-red-400"/>
-                                <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400"/>
-                                <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400"/>
-                                <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400" checked="checked" />
-                                <input type="radio" name="rating-3" class="mask mask-heart bg-green-300"/>
-                              </div>
-                              <h2 class="card-title">Sports Back Cap</h2>
-                              <p class="font-semibold">49.00 USD</p>
-                            </div>
-                        </div>
-                        <div class="card bg-white w-[340px] h-[400px] shadow-xl">
-                          <div class="w-[300px] h-[200px] m-auto mt-6 bg-[#1111] rounded-lg">
-                            <img
-                              class="mx-auto py-5"
-                              src="https://i.ibb.co.com/0YcqyRB/sportswear2.png"
-                              alt="Shoes"/>
-                          </div>
-                          <div onclick="prod1(this)" class="card-body items-center text-center">
-                            <div class="rating gap-1">
-                              <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
-                              <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400"  />
-                              <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" />
-                              <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400" checked="checked" />
-                              <input type="radio" name="rating-3" class="mask mask-heart bg-green-300" />
-                            </div>
-                            <h2 class="card-title">Full Jersey Set</h2>
-                            <p class="font-semibold">68.00 USD</p>
-                          </div>
-                        </div>
-                        <div class="card bg-white w-[340px] h-[400px] shadow-xl">
-                        <div class="w-[300px] h-[200px] m-auto mt-6 bg-[#1111] rounded-lg">
-                          <img
-                            class="mx-auto py-5"
-                            src="https://i.ibb.co.com/r49NbdQ/sportswear3.png"
-                            alt="Shoes"/>
-                        </div>
-                        <div onclick="prod1(this)" class="card-body items-center text-center">
-                          <div class="rating gap-1">
-                            <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
-                            <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400"  />
-                            <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" />
-                            <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400" checked="checked" />
-                            <input type="radio" name="rating-3" class="mask mask-heart bg-green-300" />
-                          </div>
-                          <h2 class="card-title">Sports Cates</h2>
-                          <p class="font-semibold">159.00 USD</p>
-                        </div>
-                        </div>
-                </div>
-                <h2 class="text-[40px] font-semibold uppercase">Furniture</h2>
-                <div class="flex justify-between mt-[32px] pb-[56px]">
-                        <div class="card bg-white w-[340px] h-[400px] shadow-xl">
-                            <div class="w-[300px] h-[200px] m-auto mt-6 bg-[#1111] rounded-lg">
-                              <img
-                                class="mx-auto py-5"
-                                src="https://i.ibb.co.com/hy55Dsn/furniture1.png"
-                                alt="Shoes"/>
-                            </div>
-                            <div onclick="prod1(this)" class="card-body items-center text-center">
-                              <div class="rating gap-1">
-                                <input type="radio" name="rating-3" class="mask mask-heart bg-red-400"checked="checked" />
-                                <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400"  />
-                                <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" />
-                                <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400"  />
-                                <input type="radio" name="rating-3" class="mask mask-heart bg-green-300" />
-                              </div>
-                              <h2 class="card-title">Single Relax Chair</h2>
-                              <p class="font-semibold">185.00 USD</p>
-                            </div>
-                        </div>
-                        <div class="card bg-white w-[340px] h-[400px] shadow-xl">
-                          <div class="w-[300px] h-[200px] m-auto mt-6 bg-[#1111] rounded-lg">
-                            <img
-                              class="mx-auto py-5"
-                              src="https://i.ibb.co.com/H2j131K/furniture2.png"
-                              alt="Shoes"/>
-                          </div>
-                          <div onclick="prod1(this)" class="card-body items-center text-center">
-                            <div class="rating gap-1">
-                              <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
-                              <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400"  />
-                              <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" checked="checked" />
-                              <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400"  />
-                              <input type="radio" name="rating-3" class="mask mask-heart bg-green-300" />
-                            </div>
-                            <h2 class="card-title">Children Play</h2>
-                            <p class="font-semibold">299.00 USD</p>
-                          </div>
-                        </div>
-                        <div class="card bg-white w-[340px] h-[400px] shadow-xl">
-                        <div class="w-[300px] h-[200px] m-auto mt-6 bg-[#1111] rounded-lg">
-                          <img
-                            class="mx-auto py-5"
-                            src="https://i.ibb.co.com/GT2Ydt7/furniture3.png"
-                            alt="Shoes"/>
-                        </div>
-                        <div onclick="prod1(this)" class="card-body items-center text-center">
-                          <div class="rating gap-1">
-                            <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
-                            <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400" checked="checked" />
-                            <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" />
-                            <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400"  />
-                            <input type="radio" name="rating-3" class="mask mask-heart bg-green-300" />
-                          </div>
-                          <h2 class="card-title">Flexible Sofa</h2>
-                          <p class="font-semibold">339.00 USD</p>
-                        </div>
-                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="pt-[90px]">
-                <div class="p-6 bg-white rounded-lg">
-                  <h1 class="text-2xl font-medium">Have coupon?</h1>
-                  <div class="join pt-4">
-                    <input
-                      type="text"
-                      id="hex1" 
-                      placeholder="Coupon code"
-                      class="input input-bordered join-item " />
-                    <button class="btn btn-secondary join-item" disabled id="btn2">Apply</button>
-                  </div>
-                </div>
-                <div class="py-6">
-                  <div class="bg-white rounded-lg">
-                    <div class="w-[350px]">
-                      <ol class="leading-10 font-medium text-2xl pl-12 py-6 list-decimal">
-                    <div id="setting"></div></ol>
-                  </div>
-                    <!-- <ol class="leading-10 font-medium text-2xl pl-12 py-6 list-decimal">
-                      <li> Home Coocker</li>
-                      <li> Sports Cates</li>
-                      <li> Flexible Sofa</li>
-                    </ol> -->
+            <div class="border rounded-md border-[#b6b6b6] shadow-lg w-[166px] h-[40px] flex my-auto">
+                <img class="px-2" src="https://i.ibb.co.com/ZHh2xbN/1.png" alt="">
+                <select class="text-[#3bb77e] text-sm font-medium focus:outline-none ">
+                    <option disabled selected>Your Location? </option>
+                    <option>US</option>
+                    <option>UK</option>
+                    <option>BD</option>
+                </select>
+            </div>
+            <ul class="flex justify-between my-auto text-[#7e7e7e]">
+                <li class="px-5"><a class="flex" href="#"><img class="mx-1" src="https://i.ibb.co.com/wJp89dx/5.png" alt="">Compare</a></li>
+                <li class="px-5"><a class="flex" href="#"><img class="mx-1" src="https://i.ibb.co.com/d5R7Ngf/10.png" alt="">Wishlist</a></li>
+                <li class="px-5"><a class="flex" href="#"><img class="mx-1" src="https://i.ibb.co.com/3zRLmVK/3.png" alt="">Cart</a></li>
+                <li class="px-5"><a class="flex" href="#"><img class="mx-1" src="https://i.ibb.co.com/YkMqhV2/16.png" alt="">Account</a></li>
+            </ul>
+        </div>
+    </section>
 
-                    <hr class="w-[80%] m-auto text-gray-400">
-                    <ul class="leading-10 font-medium text-2xl p-6">
-                      <li>Total Price: <span class="text-gray-400" id="total">00 USD</span></li>
-                      <li>Discount: <span class="text-gray-400" id="dicount-price">00 USD</span></li>
-                      <li>Total: <span class="text-gray-400" id ="total2">00 USD</span></li>
-                    </ul>
-                    <hr class="w-[80%] m-auto py-6 text-gray-400">
-                  </div>
-                  <div class="-mt-7 ml-8">
-                    <!-- Open the modal using ID.showModal() method -->
-                    <button id="btn1" disabled class="btn btn-secondary text-white font-medium rounded-lg" style="padding:0px 95px ;" 
-                    onclick="my_modal_5.showModal()">Make Purchase</button>
-                      <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-                        <div class="modal-box">
-                          <img src="https://i.ibb.co.com/2dhNnHS/tick-1.png" class="m-auto" alt="">
-                          <h3 class="text-3xl font-bold text-center">Congratulations</h3>
-                          <p class="py-4 text-center">You make a Purchase</p>
-                          <div class="modal-action">
-                            <form method="dialog" class="m-auto">
-                              <!-- if there is a button in form, it will close the modal -->
-                              <button class="text-white font-medium bg-[#E527B2] p-4 rounded-lg" id="btn3">Go to Home</button>
-                            </form>
-                          </div>
+    <section>
+        <div class="w-[85%] font-['Quicksand'] font-bold m-auto py-5 flex justify-between">
+            <div class="flex justify-between">
+                <div class="flex justify-between w-80">
+                    <div class="text-white bg-[#3BB77E] flex w-[260px] h-[44px] rounded-lg px-5">
+                        <img class="w-4 h-4 m-auto" src="https://i.ibb.co.com/tx1ThZD/2.png" alt="">
+                        <p class="m-auto">Browse</p>
+                        <div class="m-auto">
+                            <select class="focus:outline-none bg-[#3BB77E]">
+                                <option selected>All Categories</option>
+                                <option>Electronics</option>
+                                <option>Cosmetics</option>
+                            </select>
                         </div>
-                      </dialog>
-                  </div>
+                    </div>
+                    <div class="flex justify-between ml-2">
+                        <img class="w-4 h-4 m-auto mx-1 " src="https://i.ibb.co.com/47cTN6n/11.png" alt="">
+                        <p class="m-auto">Deal</p>
+                    </div>
+                </div>
+                <div class="my-auto px-8">
+                    <ul class="flex gap-[45px]">
+                        <li class="hover:text-[#3BB77E] duration-300"><a href="#">Home</a></li>
+                        <li class="hover:text-[#3BB77E] duration-300"><a href="#">About</a></li>
+                        <li class="hover:text-[#3BB77E] duration-300"><a href="#">Shop</a></li>
+                        <li class="hover:text-[#3BB77E] duration-300"><a href="#">Vendors</a></li>
+                        <li class="hover:text-[#3BB77E] duration-300"><a href="#">Mega Menu</a></li>
+                        <li class="hover:text-[#3BB77E] duration-300"><a href="#">Blog</a></li>
+                        <li class="hover:text-[#3BB77E] duration-300"><a href="#">Pages</a></li>
+                        <li class="hover:text-[#3BB77E] duration-300"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex">
+                <img class="w-9 h-9  m-auto" src="https://i.ibb.co.com/vJ1nYVb/9.png" alt="">
+                <div class="px-4">
+                    <p class="text-[#3BB77E] font-['quicksand'] text-[26px] font-bold tracking-widest">9110-911</p>
+                    <p class="text-xs font-['lato'] text-[#7E7E7E] font-medium tracking-wider ">24/7 Support Center</p>
                 </div>
             </div>
         </div>
     </section>
-    <script src="app.js"></script>
+
+    <section class="bg-[#D8F1E5] bg-[url(https://i.ibb.co.com/tQ1szMD/slider-shape-1.png)] bg-no-repeat bg-right-top ">
+        <div class="w-[1320px] mx-auto flex justify-between relative">
+            <div  class="my-auto">
+                <div class="w-[500px]">
+                    <p class="text-[#7e7e7e] text-base font-normal font-['Roboto'] leading-relaxed">Starting at $274.00</p>
+                    <p class="text-black text-[56px] font-black font-['Roboto'] leading-[59.92px]">The best tablet Collection 2024</p>
+                    <p class="text-[#7e7e7e] text-[28px] font-normal font-['Oregano'] leading-relaxed">Exclusive offer <span class="text-[#ffd43a] text-[28px] font-normal font-['Oregano'] leading-relaxed">-35% </span> off this week <img class="-mt-3 pl-32 pb-6" src="https://i.ibb.co.com/9tjBVgG/31.png" alt=""></p>
+                </div>
+                <button class="px-[30px] py-[10px] bg-[#ffffff] rounded-lg flex">Shop Now <img class="m-auto pl-2" src="https://i.ibb.co.com/g94hRs3/28.png" alt=""></button>
+            </div>
+            <div>
+                <img class="py-[75px]" src="https://i.ibb.co.com/qjSjk5W/slider-img-1-png.png" alt="">
+            </div>
+        </div>
+        <div class="w-12 gap-2 flex mx-auto -translate-y-6">
+            <div class="rounded-full w-2 h-2 bg-green-500"></div>
+            <div class="rounded-full w-2 h-2 bg-[#74747433]"></div>
+            <div class="rounded-full w-2 h-2 bg-[#74747433]"></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="w-[1320px] m-auto">
+            <div class="flex justify-between py-16">
+                <div class="w-60 ">
+                    <div class="w-[180px] h-[180px] bg-custom-radial rounded-full m-auto flex justify-center items-center">
+                        <img class="" src="https://i.ibb.co.com/dMxSMDW/product-cat-1-png.png" alt="">
+                    </div>
+                    <p class="text-center text-[#010f1c] text-xl font-medium font-['Roboto'] py-4">Headphones</p>
+                    <p class="text-center text-[#55585b] text-sm font-normal font-['Roboto']">3 Products</p>
+                </div>
+                <div class="w-60 ">
+                    <div class="w-[180px] h-[180px] bg-custom-radial rounded-full m-auto flex justify-center items-center">
+                        <img class="" src="https://i.ibb.co.com/wJTs1TZ/product-cat-2-png.png" alt="">
+                    </div>
+                    <p class="text-center text-[#010f1c] text-xl font-medium font-['Roboto'] py-4">Mobile Tablets</p>
+                    <p class="text-center text-[#55585b] text-sm font-normal font-['Roboto']">2 Products</p>
+                </div>
+                <div class="w-60 ">
+                    <div class="w-[180px] h-[180px] bg-custom-radial rounded-full m-auto flex justify-center items-center">
+                        <img class="" src="https://i.ibb.co.com/M9jCCLm/product-cat-3-png.png" alt="">
+                    </div>
+                    <p class="text-center text-[#010f1c] text-xl font-medium font-['Roboto'] py-4">CPU Heat Pipes</p>
+                    <p class="text-center text-[#55585b] text-sm font-normal font-['Roboto']">3 Products</p>
+                </div>
+                <div class="w-60 ">
+                    <div class="w-[180px] h-[180px] bg-custom-radial rounded-full m-auto flex justify-center items-center">
+                        <img class="" src="https://i.ibb.co.com/2MyMQJ4/product-cat-4-png.png" alt="">
+                    </div>
+                    <p class="text-center text-[#010f1c] text-xl font-medium font-['Roboto'] py-4">Smart Watch</p>
+                    <p class="text-center text-[#55585b] text-sm font-normal font-['Roboto']">6 Products</p>
+                </div>
+                <div class="w-60 ">
+                    <div class="w-[180px] h-[180px] bg-custom-radial rounded-full m-auto flex justify-center items-center">
+                        <img class="" src="https://i.ibb.co.com/PggmQkV/product-cat-5-png.png" alt="">
+                    </div>
+                    <p class="text-center text-[#010f1c] text-xl font-medium font-['Roboto'] py-4">EarBuds</p>
+                    <p class="text-center text-[#55585b] text-sm font-normal font-['Roboto']">3 Products</p>
+                </div>
+            </div>
+            <div class="flex justify-between">
+                <div class="w-[321px] h-[99px] flex gap-[15px] bg-[#F6F7F9] items-center justify-center rounded-sm">
+                    <img src="https://i.ibb.co.com/tzPX0jK/23.png" alt="">
+                    <div>
+                        <p class="text-[#010f1c] text-base font-bold font-['Roboto']">Free Delivary</p>
+                        <p class="text-[#55585b] text-sm font-normal font-['Roboto']">Orders from all item</p>
+                    </div>
+                </div>
+                <div class="w-[321px] h-[99px] flex gap-[15px] bg-[#F6F7F9] items-center justify-center rounded-sm">
+                    <img src="https://i.ibb.co.com/qd7CGyq/24.png" alt="">
+                    <div>
+                        <p class="text-[#010f1c] text-base font-bold font-['Roboto']">Return & Refunf</p>
+                        <p class="text-[#55585b] text-sm font-normal font-['Roboto']">Maney back guarantee</p>
+                    </div>
+                </div>
+                <div class="w-[321px] h-[99px] flex gap-[15px] bg-[#F6F7F9] items-center justify-center rounded-sm">
+                    <img src="https://i.ibb.co.com/BVc6w0c/25.png" alt="">
+                    <div>
+                        <p class="text-[#010f1c] text-base font-bold font-['Roboto']">Member Discount</p>
+                        <p class="text-[#55585b] text-sm font-normal font-['Roboto']">One very order over $140.00</p>
+                    </div>
+                </div>
+                <div class="w-[321px] h-[99px] flex gap-[15px] bg-[#F6F7F9] items-center justify-center rounded-sm">
+                    <img src="https://i.ibb.co.com/P9hL0Jt/SVG.png" alt="">
+                    <div>
+                        <p class="text-[#010f1c] text-base font-bold font-['Roboto']">Support</p>
+                        <p class="text-[#55585b] text-sm font-normal font-['Roboto']">Contact us 24 hours a day</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="w-[1320px] m-auto pt-[70px]">
+            <div class="flex justify-between">
+                <div>
+                    <p class=" text-[#021d35] text-4xl font-bold font-['Roboto']">Trending Products</p>
+                    <img class="-mt-6" src="https://i.ibb.co.com/GPfTpT8/26.png" alt="">
+                </div>
+                <ul class="text-xl font-['robot'] flex gap-4">
+                    <li>New</li>
+                    <li class="text-[#A0A2A4]">Featured</li>
+                    <li class="text-[#A0A2A4]">Top Sellers</li>
+                </ul>
+            </div>
+            <div class="pt-8 flex justify-between">
+                <div class="w-[305px] border-[2px] border-[#c7c7c7] rounded-lg">
+                    <img src="https://i.ibb.co.com/xspkzBH/Link-headphone-1-png.png" alt="">
+                    <hr class="border-[1.2px]">
+                    <div class="w-[90%] m-auto py-4">
+                    <p class="text-xs font-medium font-['Roboto'] text-[#55585B]">Headphones</p>
+                    <p class="text-[#010f1c] text-[15px] font-medium font-['Roboto']">Headphones Wireless.</p>
+                    <div class="flex gap-3">
+                        <div id="rating" class="flex space-x-1">
+                        <span data-rating="1" class="cursor-pointer text-yellow-400">
+                          ★
+                        </span>
+                        <span data-rating="2" class="cursor-pointer  text-yellow-400">
+                          ★
+                        </span>
+                        <span data-rating="3" class="cursor-pointer  text-yellow-400">
+                          ★
+                        </span>
+                        <span data-rating="4" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                          ★
+                        </span>
+                        <span data-rating="5" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                          ★
+                        </span>
+                      </div>
+                      <p class="text-xs font-medium font-['Roboto'] text-[#55585B] my-auto">(3 Review)</p>
+                    </div>
+                    <p><span class="text-[#55585b] text-xs font-medium font-['Roboto'] line-through">$120</span><span class="text-[#0989ff] text-[15px] font-bold font-['Roboto']">$103.20</span></p>
+                    </div>
+                </div>
+                <div class="w-[305px] border-[2px] border-[#c7c7c7] rounded-lg">
+                    <img src="https://i.ibb.co.com/q9txMDx/Link-headphone-5-png.png" alt="">
+                    <hr class="border-[1.2px]">
+                    <div class="w-[90%] m-auto py-4">
+                    <p class="text-xs font-medium font-['Roboto'] text-[#55585B]">Headphones</p>
+                    <p class="text-[#010f1c] text-[15px] font-medium font-['Roboto']">Headphones Wireless.</p>
+                    <div class="flex gap-3">
+                        <div id="rating" class="flex space-x-1">
+                        <span data-rating="1" class="cursor-pointer text-yellow-400">
+                          ★
+                        </span>
+                        <span data-rating="2" class="cursor-pointer  text-yellow-400">
+                          ★
+                        </span>
+                        <span data-rating="3" class="cursor-pointer  text-yellow-400">
+                          ★
+                        </span>
+                        <span data-rating="4" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                          ★
+                        </span>
+                        <span data-rating="5" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                          ★
+                        </span>
+                      </div>
+                      <p class="text-xs font-medium font-['Roboto'] text-[#55585B] my-auto">(3 Review)</p>
+                    </div>
+                    <p><span class="text-[#55585b] text-xs font-medium font-['Roboto'] line-through">$120</span><span class="text-[#0989ff] text-[15px] font-bold font-['Roboto']">$103.20</span></p>
+                    </div>
+                </div>
+                <div class="w-[305px] border-[2px] border-[#c7c7c7] rounded-lg">
+                    <img src="https://i.ibb.co.com/Vt50zR2/Link-headphone-8-png.png" alt="">
+                    <hr class="border-[1.2px]">
+                    <div class="w-[90%] m-auto py-4">
+                    <p class="text-xs font-medium font-['Roboto'] text-[#55585B]">Headphones</p>
+                    <p class="text-[#010f1c] text-[15px] font-medium font-['Roboto']">Headphones Wireless.</p>
+                    <div class="flex gap-3">
+                        <div id="rating" class="flex space-x-1">
+                        <span data-rating="1" class="cursor-pointer text-yellow-400">
+                          ★
+                        </span>
+                        <span data-rating="2" class="cursor-pointer  text-yellow-400">
+                          ★
+                        </span>
+                        <span data-rating="3" class="cursor-pointer  text-yellow-400">
+                          ★
+                        </span>
+                        <span data-rating="4" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                          ★
+                        </span>
+                        <span data-rating="5" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                          ★
+                        </span>
+                      </div>
+                      <p class="text-xs font-medium font-['Roboto'] text-[#55585B] my-auto">(3 Review)</p>
+                    </div>
+                    <p><span class="text-[#55585b] text-xs font-medium font-['Roboto'] line-through">$120</span><span class="text-[#0989ff] text-[15px] font-bold font-['Roboto']">$103.20</span></p>
+                    </div>
+                </div>
+                <div class="w-[305px] border-[2px] border-[#c7c7c7] rounded-lg">
+                    <img src="https://i.ibb.co.com/CWz7f55/Link-mobile-1-png.png" alt="">
+                    <hr class="border-[1.2px]">
+                    <div class="w-[90%] m-auto py-4">
+                    <p class="text-xs font-medium font-['Roboto'] text-[#55585B]">Headphones</p>
+                    <p class="text-[#010f1c] text-[15px] font-medium font-['Roboto']">Headphones Wireless.</p>
+                    <div class="flex gap-3">
+                        <div id="rating" class="flex space-x-1">
+                        <span data-rating="1" class="cursor-pointer text-yellow-400">
+                          ★
+                        </span>
+                        <span data-rating="2" class="cursor-pointer  text-yellow-400">
+                          ★
+                        </span>
+                        <span data-rating="3" class="cursor-pointer  text-yellow-400">
+                          ★
+                        </span>
+                        <span data-rating="4" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                          ★
+                        </span>
+                        <span data-rating="5" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                          ★
+                        </span>
+                      </div>
+                      <p class="text-xs font-medium font-['Roboto'] text-[#55585B] my-auto">(3 Review)</p>
+                    </div>
+                    <p><span class="text-[#55585b] text-xs font-medium font-['Roboto'] line-through">$120</span><span class="text-[#0989ff] text-[15px] font-bold font-['Roboto']">$103.20</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-6 flex justify-between">
+                <div class="w-[305px] border-[2px] border-[#c7c7c7] rounded-lg">
+                    <img src="https://i.ibb.co.com/D7SWNZq/Link-mobile-5-png.png" alt="">
+                    <hr class="border-[1.2px]">
+                    <div class="w-[90%] m-auto py-4">
+                    <p class="text-xs font-medium font-['Roboto'] text-[#55585B]">Headphones</p>
+                    <p class="text-[#010f1c] text-[15px] font-medium font-['Roboto']">Headphones Wireless.</p>
+                    <div class="flex gap-3">
+                        <div id="rating" class="flex space-x-1">
+                        <span data-rating="1" class="cursor-pointer text-yellow-400">
+                          ★
+                        </span>
+                        <span data-rating="2" class="cursor-pointer  text-yellow-400">
+                          ★
+                        </span>
+                        <span data-rating="3" class="cursor-pointer  text-yellow-400">
+                          ★
+                        </span>
+                        <span data-rating="4" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                          ★
+                        </span>
+                        <span data-rating="5" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                          ★
+                        </span>
+                      </div>
+                      <p class="text-xs font-medium font-['Roboto'] text-[#55585B] my-auto">(3 Review)</p>
+                    </div>
+                    <p><span class="text-[#55585b] text-xs font-medium font-['Roboto'] line-through">$120</span><span class="text-[#0989ff] text-[15px] font-bold font-['Roboto']">$103.20</span></p>
+                    </div>
+                </div>
+                <div class="w-[305px] border-[2px] border-[#c7c7c7] rounded-lg">
+                    <img src="https://i.ibb.co.com/5YjVjRS/Link-ipad-1-png.png" alt="">
+                    <hr class="border-[1.2px]">
+                    <div class="w-[90%] m-auto py-4">
+                    <p class="text-xs font-medium font-['Roboto'] text-[#55585B]">Headphones</p>
+                    <p class="text-[#010f1c] text-[15px] font-medium font-['Roboto']">Headphones Wireless.</p>
+                    <div class="flex gap-3">
+                        <div id="rating" class="flex space-x-1">
+                        <span data-rating="1" class="cursor-pointer text-yellow-400">
+                          ★
+                        </span>
+                        <span data-rating="2" class="cursor-pointer  text-yellow-400">
+                          ★
+                        </span>
+                        <span data-rating="3" class="cursor-pointer  text-yellow-400">
+                          ★
+                        </span>
+                        <span data-rating="4" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                          ★
+                        </span>
+                        <span data-rating="5" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                          ★
+                        </span>
+                      </div>
+                      <p class="text-xs font-medium font-['Roboto'] text-[#55585B] my-auto">(3 Review)</p>
+                    </div>
+                    <p><span class="text-[#55585b] text-xs font-medium font-['Roboto'] line-through">$120</span><span class="text-[#0989ff] text-[15px] font-bold font-['Roboto']">$103.20</span></p>
+                    </div>
+                </div>
+                <div class="w-[305px] border-[2px] border-[#c7c7c7] rounded-lg">
+                    <img src="https://i.ibb.co.com/9GKjy7H/Link-cpu-1-png.png" alt="">
+                    <hr class="border-[1.2px]">
+                    <div class="w-[90%] m-auto py-4">
+                    <p class="text-xs font-medium font-['Roboto'] text-[#55585B]">Headphones</p>
+                    <p class="text-[#010f1c] text-[15px] font-medium font-['Roboto']">Headphones Wireless.</p>
+                    <div class="flex gap-3">
+                        <div id="rating" class="flex space-x-1">
+                        <span data-rating="1" class="cursor-pointer text-yellow-400">
+                          ★
+                        </span>
+                        <span data-rating="2" class="cursor-pointer  text-yellow-400">
+                          ★
+                        </span>
+                        <span data-rating="3" class="cursor-pointer  text-yellow-400">
+                          ★
+                        </span>
+                        <span data-rating="4" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                          ★
+                        </span>
+                        <span data-rating="5" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                          ★
+                        </span>
+                      </div>
+                      <p class="text-xs font-medium font-['Roboto'] text-[#55585B] my-auto">(3 Review)</p>
+                    </div>
+                    <p><span class="text-[#55585b] text-xs font-medium font-['Roboto'] line-through">$120</span><span class="text-[#0989ff] text-[15px] font-bold font-['Roboto']">$103.20</span></p>
+                    </div>
+                </div>
+                <div class="w-[305px] border-[2px] border-[#c7c7c7] rounded-lg">
+                    <img class="py-12" src="https://i.ibb.co.com/CzfZssT/Link-cpu-5-png.png" alt="">
+                    <hr class="border-[1.2px]">
+                    <div class="w-[90%] m-auto py-4">
+                    <p class="text-xs font-medium font-['Roboto'] text-[#55585B]">Headphones</p>
+                    <p class="text-[#010f1c] text-[15px] font-medium font-['Roboto']">Headphones Wireless.</p>
+                    <div class="flex gap-3">
+                        <div id="rating" class="flex space-x-1">
+                        <span data-rating="1" class="cursor-pointer text-yellow-400">
+                          ★
+                        </span>
+                        <span data-rating="2" class="cursor-pointer  text-yellow-400">
+                          ★
+                        </span>
+                        <span data-rating="3" class="cursor-pointer  text-yellow-400">
+                          ★
+                        </span>
+                        <span data-rating="4" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                          ★
+                        </span>
+                        <span data-rating="5" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                          ★
+                        </span>
+                      </div>
+                      <p class="text-xs font-medium font-['Roboto'] text-[#55585B] my-auto">(3 Review)</p>
+                    </div>
+                    <p><span class="text-[#55585b] text-xs font-medium font-['Roboto'] line-through">$120</span><span class="text-[#0989ff] text-[15px] font-bold font-['Roboto']">$103.20</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+      <div class="w-[1320px] m-auto py-[70px] flex justify-between">
+        <div class="w-[856px] h-[260px] bg-[url(https://i.ibb.co.com/z2GPpRY/Image11.png)] bg-no-repeat">
+          <div class="w-[736px] m-auto pt-[52px]">
+            <div class="w-[230px]">
+              <p class=" text-[#010f1c] text-base font-normal font-['Roboto'] leading-relaxed">Sale 20% off all store</p>
+              <p class="text-[#010f1c] text-[28px] font-medium font-['Roboto'] leading-9 pt-3">Smartphone <br>BLU G91 Pro 2022</p>
+              <button class="flex gap-2 text-[#010f1c] text-[13px] font-medium font-['Roboto'] pt-4">Show Now <img class="w-[15px] h-[10px] my-auto" src="https://i.ibb.co.com/g94hRs3/28.png" alt=""></button>
+            </div>
+          </div>
+        </div>
+        <div class="w-[416px] h-[260px] bg-[url(https://i.ibb.co.com/LntdHFV/Image.png)]">
+          <div class="w-[336px] m-auto pt-[52px]">
+            <div class="w-[140px]">
+              <p class="text-[#010f1c] text-xl font-medium font-['Roboto']">HyperX Cloud II Wireless</p>
+              <p class="text-[#010f1c] text-base font-medium font-['Roboto'] py-[5px]">Sale 35% off</p>
+              <button class="flex gap-2 text-[#010f1c] text-[13px] font-medium font-['Roboto'] pt-2">Show Now <img class="w-[15px] h-[10px] my-auto" src="https://i.ibb.co.com/g94hRs3/28.png" alt=""></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#EAE2DE]">
+      <div class="w-[1320px] m-auto py-16">
+        <div class="flex justify-between">
+          <div>
+              <p class=" text-[#021d35] text-4xl font-bold font-['Roboto']">Deal of The Day</p>
+              <img class="-mt-6" src="https://i.ibb.co.com/GPfTpT8/26.png" alt="">
+          </div>
+          <p class="flex gap-2 text-right text-white text-sm font-medium font-['Roboto'] my-auto px-[26px] py-[9px] bg-[#0989FF] rounded-md">View All Deals <img class="w-[15px] h-[10px] my-auto" src="https://i.ibb.co.com/bd4FNv3/29.png" alt=""></p>
+        </div>
+        <div class="pt-[56px] flex justify-between">
+          <div class="w-[412px] border-[2px] border-[#c7c7c7] rounded-lg bg-white">
+            <img class="w-[580px]" src="https://i.ibb.co.com/q9txMDx/Link-headphone-5-png.png" alt="">
+            <hr class="border-[1.2px]">
+            <div class="w-[80%] m-auto pt-4">
+              <p class="text-xs font-medium font-['Roboto'] text-[#55585B]">Headphones</p>
+              <p class="text-[#010f1c] text-[15px] font-medium font-['Roboto']">Headphones Wireless.</p>
+              <div class="flex gap-3">
+                  <div id="rating" class="flex space-x-1">
+                  <span data-rating="1" class="cursor-pointer text-yellow-400">
+                  ★
+                  </span>
+                  <span data-rating="2" class="cursor-pointer  text-yellow-400">
+                  ★
+                  </span>
+                  <span data-rating="3" class="cursor-pointer  text-yellow-400">
+                  ★
+                  </span>
+                  <span data-rating="4" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                  ★
+                  </span>
+                  <span data-rating="5" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                  ★
+                  </span>
+                </div>
+                <p class="text-xs font-medium font-['Roboto'] text-[#55585B] my-auto">(3 Review)</p>
+              </div>
+              <p><span class="text-[#55585b] text-xs font-medium font-['Roboto'] line-through">$120</span><span class="text-[#0989ff] text-[15px] font-bold font-['Roboto']">$103.20</span></p>
+              <div class="py-[25px] flex gap-2">
+                <div class="rounded-[5px] border border-[#e4e5e9] w-[50px] py-[10px] ">
+                  <p class="text-center text-[#010f1c] text-xl font-bold font-['Roboto'] uppercase leading-tight">62</p>
+                  <p class="text-center text-[#55585b] text-[10px] font-medium font-['Roboto'] uppercase leading-[10px]">DAY</p>
+                </div>
+                <div class="rounded-[5px] border border-[#e4e5e9] w-[50px] py-[10px] ">
+                  <p class="text-center text-[#010f1c] text-xl font-bold font-['Roboto'] uppercase leading-tight">06</p>
+                  <p class="text-center text-[#55585b] text-[10px] font-medium font-['Roboto'] uppercase leading-[10px]">hrs</p>
+                </div>
+                <div class="rounded-[5px] border border-[#e4e5e9] w-[50px] py-[10px] ">
+                  <p class="text-center text-[#010f1c] text-xl font-bold font-['Roboto'] uppercase leading-tight">46</p>
+                  <p class="text-center text-[#55585b] text-[10px] font-medium font-['Roboto'] uppercase leading-[10px]">min</p>
+                </div>
+                <div class="rounded-[5px] border border-[#e4e5e9] w-[50px] py-[10px] ">
+                  <p class="text-center text-[#010f1c] text-xl font-bold font-['Roboto'] uppercase leading-tight">29</p>
+                  <p class="text-center text-[#55585b] text-[10px] font-medium font-['Roboto'] uppercase leading-[10px]">sec</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[412px] border-[2px] border-[#c7c7c7] rounded-lg bg-white">
+            <img class="w-[580px]" src="https://i.ibb.co.com/9GKjy7H/Link-cpu-1-png.png" alt="">
+            <hr class="border-[1.2px]">
+            <div class="w-[80%] m-auto pt-4">
+              <p class="text-xs font-medium font-['Roboto'] text-[#55585B]">Headphones</p>
+              <p class="text-[#010f1c] text-[15px] font-medium font-['Roboto']">Headphones Wireless.</p>
+              <div class="flex gap-3">
+                  <div id="rating" class="flex space-x-1">
+                  <span data-rating="1" class="cursor-pointer text-yellow-400">
+                  ★
+                  </span>
+                  <span data-rating="2" class="cursor-pointer  text-yellow-400">
+                  ★
+                  </span>
+                  <span data-rating="3" class="cursor-pointer  text-yellow-400">
+                  ★
+                  </span>
+                  <span data-rating="4" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                  ★
+                  </span>
+                  <span data-rating="5" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                  ★
+                  </span>
+                </div>
+                <p class="text-xs font-medium font-['Roboto'] text-[#55585B] my-auto">(3 Review)</p>
+              </div>
+              <p><span class="text-[#55585b] text-xs font-medium font-['Roboto'] line-through">$120</span><span class="text-[#0989ff] text-[15px] font-bold font-['Roboto']">$103.20</span></p>
+              <div class="py-[25px] flex gap-2">
+                <div class="rounded-[5px] border border-[#e4e5e9] w-[50px] py-[10px] ">
+                  <p class="text-center text-[#010f1c] text-xl font-bold font-['Roboto'] uppercase leading-tight">62</p>
+                  <p class="text-center text-[#55585b] text-[10px] font-medium font-['Roboto'] uppercase leading-[10px]">DAY</p>
+                </div>
+                <div class="rounded-[5px] border border-[#e4e5e9] w-[50px] py-[10px] ">
+                  <p class="text-center text-[#010f1c] text-xl font-bold font-['Roboto'] uppercase leading-tight">06</p>
+                  <p class="text-center text-[#55585b] text-[10px] font-medium font-['Roboto'] uppercase leading-[10px]">hrs</p>
+                </div>
+                <div class="rounded-[5px] border border-[#e4e5e9] w-[50px] py-[10px] ">
+                  <p class="text-center text-[#010f1c] text-xl font-bold font-['Roboto'] uppercase leading-tight">46</p>
+                  <p class="text-center text-[#55585b] text-[10px] font-medium font-['Roboto'] uppercase leading-[10px]">min</p>
+                </div>
+                <div class="rounded-[5px] border border-[#e4e5e9] w-[50px] py-[10px] ">
+                  <p class="text-center text-[#010f1c] text-xl font-bold font-['Roboto'] uppercase leading-tight">29</p>
+                  <p class="text-center text-[#55585b] text-[10px] font-medium font-['Roboto'] uppercase leading-[10px]">sec</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[412px] border-[2px] border-[#c7c7c7] rounded-lg bg-white">
+            <img class="w-[580px]" src="https://i.ibb.co.com/nDZQfz4/Link-watch-9-png.png" alt="">
+            <hr class="border-[1.2px]">
+            <div class="w-[80%] m-auto pt-4">
+              <p class="text-xs font-medium font-['Roboto'] text-[#55585B]">Headphones</p>
+              <p class="text-[#010f1c] text-[15px] font-medium font-['Roboto']">Headphones Wireless.</p>
+              <div class="flex gap-3">
+                  <div id="rating" class="flex space-x-1">
+                  <span data-rating="1" class="cursor-pointer text-yellow-400">
+                  ★
+                  </span>
+                  <span data-rating="2" class="cursor-pointer  text-yellow-400">
+                  ★
+                  </span>
+                  <span data-rating="3" class="cursor-pointer  text-yellow-400">
+                  ★
+                  </span>
+                  <span data-rating="4" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                  ★
+                  </span>
+                  <span data-rating="5" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                  ★
+                  </span>
+                </div>
+                <p class="text-xs font-medium font-['Roboto'] text-[#55585B] my-auto">(3 Review)</p>
+              </div>
+              <p><span class="text-[#55585b] text-xs font-medium font-['Roboto'] line-through">$120</span><span class="text-[#0989ff] text-[15px] font-bold font-['Roboto']">$103.20</span></p>
+              <div class="py-[25px] flex gap-2">
+                <div class="rounded-[5px] border border-[#e4e5e9] w-[50px] py-[10px] ">
+                  <p class="text-center text-[#010f1c] text-xl font-bold font-['Roboto'] uppercase leading-tight">62</p>
+                  <p class="text-center text-[#55585b] text-[10px] font-medium font-['Roboto'] uppercase leading-[10px]">DAY</p>
+                </div>
+                <div class="rounded-[5px] border border-[#e4e5e9] w-[50px] py-[10px] ">
+                  <p class="text-center text-[#010f1c] text-xl font-bold font-['Roboto'] uppercase leading-tight">06</p>
+                  <p class="text-center text-[#55585b] text-[10px] font-medium font-['Roboto'] uppercase leading-[10px]">hrs</p>
+                </div>
+                <div class="rounded-[5px] border border-[#e4e5e9] w-[50px] py-[10px] ">
+                  <p class="text-center text-[#010f1c] text-xl font-bold font-['Roboto'] uppercase leading-tight">46</p>
+                  <p class="text-center text-[#55585b] text-[10px] font-medium font-['Roboto'] uppercase leading-[10px]">min</p>
+                </div>
+                <div class="rounded-[5px] border border-[#e4e5e9] w-[50px] py-[10px] ">
+                  <p class="text-center text-[#010f1c] text-xl font-bold font-['Roboto'] uppercase leading-tight">29</p>
+                  <p class="text-center text-[#55585b] text-[10px] font-medium font-['Roboto'] uppercase leading-[10px]">sec</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="w-[1320px] m-auto pt-20 flex justify-between">
+        <div>
+          <div class="w-[416px] rounded-md border-2 border-pink-400 flex justify-between">
+            <div class="w-[160px] m-auto py-10">
+              <p class="text-[#010f1c] text-xl font-medium font-['Roboto'] leading-normal">Electronics Gadgets</p>
+              <hr class="bg-[#0989ff] h-1">
+              <ol class="text-[#55585b] text-sm font-medium font-['Roboto'] leading-6 list-disc py-3">
+                <li>Micrscope</li>
+                <li>Remote Control</li>
+                <li>Monitor</li>
+                <li>Thermometer</li>
+                <li>Backpack</li>
+                <li>Headphones</li>
+              </ol>
+              <button class="flex gap-2 text-[#010f1c] text-[13px] font-medium font-['Roboto'] pt-2">More Products <img class="w-[15px] h-[10px] my-auto" src="https://i.ibb.co.com/g94hRs3/28.png" alt=""></button>
+            </div>
+            <div>
+              <img class="w-[150px] relative -bottom-[76px]" src="https://i.ibb.co.com/9bRp3XK/DALL-E-2024-11-20-21-01-58-A-cheerful-young-man-holding-a-smartphone-in-one-hand-and-a-credit-card-i.png" alt="">
+            </div>
+          </div>
+          <div class="py-3">
+            <a href="#"><img src="https://i.ibb.co.com/qDBwPJc/Background.png" alt=""></a>
+          </div>
+        </div>
+        
+        <div class="w-[860px]">
+          <div class="flex justify-between">
+            <div class="w-[270px] border-[2px] border-[#c7c7c7] rounded-lg">
+              <img src="https://i.ibb.co.com/xspkzBH/Link-headphone-1-png.png" alt="">
+              <hr class="border-[1.2px]">
+              <div class="w-[90%] m-auto py-4">
+              <p class="text-xs font-medium font-['Roboto'] text-[#55585B]">Headphones</p>
+              <p class="text-[#010f1c] text-[15px] font-medium font-['Roboto']">Headphones Wireless.</p>
+              <div class="flex gap-3">
+                  <div id="rating" class="flex space-x-1">
+                  <span data-rating="1" class="cursor-pointer text-yellow-400">
+                    ★
+                  </span>
+                  <span data-rating="2" class="cursor-pointer  text-yellow-400">
+                    ★
+                  </span>
+                  <span data-rating="3" class="cursor-pointer  text-yellow-400">
+                    ★
+                  </span>
+                  <span data-rating="4" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                    ★
+                  </span>
+                  <span data-rating="5" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                    ★
+                  </span>
+                </div>
+                <p class="text-xs font-medium font-['Roboto'] text-[#55585B] my-auto">(3 Review)</p>
+              </div>
+              <p><span class="text-[#55585b] text-xs font-medium font-['Roboto'] line-through">$120</span><span class="text-[#0989ff] text-[15px] font-bold font-['Roboto']">$103.20</span></p>
+              </div>
+            </div>
+            <div class="w-[270px] border-[2px] border-[#c7c7c7] rounded-lg">
+              <img src="https://i.ibb.co.com/xspkzBH/Link-headphone-1-png.png" alt="">
+              <hr class="border-[1.2px]">
+              <div class="w-[90%] m-auto py-4">
+              <p class="text-xs font-medium font-['Roboto'] text-[#55585B]">Headphones</p>
+              <p class="text-[#010f1c] text-[15px] font-medium font-['Roboto']">Headphones Wireless.</p>
+              <div class="flex gap-3">
+                  <div id="rating" class="flex space-x-1">
+                  <span data-rating="1" class="cursor-pointer text-yellow-400">
+                    ★
+                  </span>
+                  <span data-rating="2" class="cursor-pointer  text-yellow-400">
+                    ★
+                  </span>
+                  <span data-rating="3" class="cursor-pointer  text-yellow-400">
+                    ★
+                  </span>
+                  <span data-rating="4" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                    ★
+                  </span>
+                  <span data-rating="5" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                    ★
+                  </span>
+                </div>
+                <p class="text-xs font-medium font-['Roboto'] text-[#55585B] my-auto">(3 Review)</p>
+              </div>
+              <p><span class="text-[#55585b] text-xs font-medium font-['Roboto'] line-through">$120</span><span class="text-[#0989ff] text-[15px] font-bold font-['Roboto']">$103.20</span></p>
+              </div>
+            </div>
+            <div class="w-[270px] border-[2px] border-[#c7c7c7] rounded-lg">
+              <img src="https://i.ibb.co.com/xspkzBH/Link-headphone-1-png.png" alt="">
+              <hr class="border-[1.2px]">
+              <div class="w-[90%] m-auto py-4">
+              <p class="text-xs font-medium font-['Roboto'] text-[#55585B]">Headphones</p>
+              <p class="text-[#010f1c] text-[15px] font-medium font-['Roboto']">Headphones Wireless.</p>
+              <div class="flex gap-3">
+                  <div id="rating" class="flex space-x-1">
+                  <span data-rating="1" class="cursor-pointer text-yellow-400">
+                    ★
+                  </span>
+                  <span data-rating="2" class="cursor-pointer  text-yellow-400">
+                    ★
+                  </span>
+                  <span data-rating="3" class="cursor-pointer  text-yellow-400">
+                    ★
+                  </span>
+                  <span data-rating="4" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                    ★
+                  </span>
+                  <span data-rating="5" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                    ★
+                  </span>
+                </div>
+                <p class="text-xs font-medium font-['Roboto'] text-[#55585B] my-auto">(3 Review)</p>
+              </div>
+              <p><span class="text-[#55585b] text-xs font-medium font-['Roboto'] line-through">$120</span><span class="text-[#0989ff] text-[15px] font-bold font-['Roboto']">$103.20</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="py-5">
+            <div class="flex justify-between">
+              <div class="w-[270px] border-[2px] border-[#c7c7c7] rounded-lg">
+                <img src="https://i.ibb.co.com/xspkzBH/Link-headphone-1-png.png" alt="">
+                <hr class="border-[1.2px]">
+                <div class="w-[90%] m-auto py-4">
+                <p class="text-xs font-medium font-['Roboto'] text-[#55585B]">Headphones</p>
+                <p class="text-[#010f1c] text-[15px] font-medium font-['Roboto']">Headphones Wireless.</p>
+                <div class="flex gap-3">
+                    <div id="rating" class="flex space-x-1">
+                    <span data-rating="1" class="cursor-pointer text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="2" class="cursor-pointer  text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="3" class="cursor-pointer  text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="4" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="5" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                      ★
+                    </span>
+                  </div>
+                  <p class="text-xs font-medium font-['Roboto'] text-[#55585B] my-auto">(3 Review)</p>
+                </div>
+                <p><span class="text-[#55585b] text-xs font-medium font-['Roboto'] line-through">$120</span><span class="text-[#0989ff] text-[15px] font-bold font-['Roboto']">$103.20</span></p>
+                </div>
+              </div>
+              <div class="w-[270px] border-[2px] border-[#c7c7c7] rounded-lg">
+                <img src="https://i.ibb.co.com/xspkzBH/Link-headphone-1-png.png" alt="">
+                <hr class="border-[1.2px]">
+                <div class="w-[90%] m-auto py-4">
+                <p class="text-xs font-medium font-['Roboto'] text-[#55585B]">Headphones</p>
+                <p class="text-[#010f1c] text-[15px] font-medium font-['Roboto']">Headphones Wireless.</p>
+                <div class="flex gap-3">
+                    <div id="rating" class="flex space-x-1">
+                    <span data-rating="1" class="cursor-pointer text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="2" class="cursor-pointer  text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="3" class="cursor-pointer  text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="4" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="5" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                      ★
+                    </span>
+                  </div>
+                  <p class="text-xs font-medium font-['Roboto'] text-[#55585B] my-auto">(3 Review)</p>
+                </div>
+                <p><span class="text-[#55585b] text-xs font-medium font-['Roboto'] line-through">$120</span><span class="text-[#0989ff] text-[15px] font-bold font-['Roboto']">$103.20</span></p>
+                </div>
+              </div>
+              <div class="w-[270px] border-[2px] border-[#c7c7c7] rounded-lg">
+                <img src="https://i.ibb.co.com/xspkzBH/Link-headphone-1-png.png" alt="">
+                <hr class="border-[1.2px]">
+                <div class="w-[90%] m-auto py-4">
+                <p class="text-xs font-medium font-['Roboto'] text-[#55585B]">Headphones</p>
+                <p class="text-[#010f1c] text-[15px] font-medium font-['Roboto']">Headphones Wireless.</p>
+                <div class="flex gap-3">
+                    <div id="rating" class="flex space-x-1">
+                    <span data-rating="1" class="cursor-pointer text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="2" class="cursor-pointer  text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="3" class="cursor-pointer  text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="4" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="5" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                      ★
+                    </span>
+                  </div>
+                  <p class="text-xs font-medium font-['Roboto'] text-[#55585B] my-auto">(3 Review)</p>
+                </div>
+                <p><span class="text-[#55585b] text-xs font-medium font-['Roboto'] line-through">$120</span><span class="text-[#0989ff] text-[15px] font-bold font-['Roboto']">$103.20</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-[90px]">
+      <div class="w-[1320px] m-auto bg-[#d8f1e5] h-[500px] rounded-md ">
+        <div class="w-[90%] mx-auto flex justify-around py-[90px]">
+          <div class="w-[500px]">
+            <p class="text-[#7e7e7e] text-base font-medium font-['Roboto'] uppercase">Tablet Collection 2023</p>
+            <h1 class="text-[#060606] text-[54px] font-extrabold font-['Roboto'] leading-[62.10px] pb-[13px]">Galaxy Tab S6 Lite Android Tablet</h1>
+            <p class="text-[#7e7e7e] text-sm font-medium font-['Roboto'] line-through leading-tight">$320</p>
+            <p class="text-[#7e7e7e] text-[40px] font-medium font-['Roboto'] leading-[30px] pb-[40px]">$288</p>
+            <button class="px-[30px] py-[10px] bg-black text-white rounded-lg flex">Shop Now</button>
+          </div>
+          <div class="w-[550px] flex justify-between">
+            
+            <div class="w-[400px] h-[400px] -mt-10  rounded-full bg-custom-radial2"> 
+              <div class="">
+                <img class="absolute ml-36 -mt-5" src="https://i.ibb.co.com/m8nQ7hh/banner-slider-offer-png.png" alt="">
+                <img class="w-[420px] h-[367px] ml-[130px] mt-5" src="https://i.ibb.co.com/ysZrJT1/banner-slider-1-png.png" alt="">
+              </div>
+            </div>
+            <div class="my-auto">
+              <div class="rounded-full w-2 h-2 bg-green-500 my-2"></div>
+              <div class="rounded-full w-2 h-2 bg-[#74747433] my-2"></div>
+              <div class="rounded-full w-2 h-2 bg-[#74747433] my-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="w-[1320px] m-auto">
+        <div>
+          <div class="flex justify-between">
+            <div>
+              <p class=" text-[#021d35] text-4xl font-bold font-['Roboto']">New Arrivals</p>
+              <img class="-mt-6" src="https://i.ibb.co.com/GPfTpT8/26.png" alt="">
+            </div>
+            <div class="flex gap-3">
+              <hr class="w-[790px] my-auto mr-10 border-[2px]">
+              <a href="#"><img class="border rounded-full px-4 py-[13px]" src="https://i.ibb.co.com/GppzNnx/30.png" alt=""></a>
+              <a href="#"><img class="border rounded-full px-4 py-[13px]" src="https://i.ibb.co.com/GppzNnx/30.png" alt=""></a>
+            </div>
+          </div>
+          <div class="pt-8 flex justify-between">
+            <div class="w-[305px] border-[2px] border-[#c7c7c7] rounded-lg">
+                <img src="https://i.ibb.co.com/xspkzBH/Link-headphone-1-png.png" alt="">
+                <hr class="border-[1.2px]">
+                <div class="w-[90%] m-auto py-4">
+                <p class="text-xs font-medium font-['Roboto'] text-[#55585B]">Headphones</p>
+                <p class="text-[#010f1c] text-[15px] font-medium font-['Roboto']">Headphones Wireless.</p>
+                <div class="flex gap-3">
+                    <div id="rating" class="flex space-x-1">
+                    <span data-rating="1" class="cursor-pointer text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="2" class="cursor-pointer  text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="3" class="cursor-pointer  text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="4" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="5" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                      ★
+                    </span>
+                  </div>
+                  <p class="text-xs font-medium font-['Roboto'] text-[#55585B] my-auto">(3 Review)</p>
+                </div>
+                <p><span class="text-[#55585b] text-xs font-medium font-['Roboto'] line-through">$120</span><span class="text-[#0989ff] text-[15px] font-bold font-['Roboto']">$103.20</span></p>
+                </div>
+            </div>
+            <div class="w-[305px] border-[2px] border-[#c7c7c7] rounded-lg">
+                <img src="https://i.ibb.co.com/q9txMDx/Link-headphone-5-png.png" alt="">
+                <hr class="border-[1.2px]">
+                <div class="w-[90%] m-auto py-4">
+                <p class="text-xs font-medium font-['Roboto'] text-[#55585B]">Headphones</p>
+                <p class="text-[#010f1c] text-[15px] font-medium font-['Roboto']">Headphones Wireless.</p>
+                <div class="flex gap-3">
+                    <div id="rating" class="flex space-x-1">
+                    <span data-rating="1" class="cursor-pointer text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="2" class="cursor-pointer  text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="3" class="cursor-pointer  text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="4" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="5" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                      ★
+                    </span>
+                  </div>
+                  <p class="text-xs font-medium font-['Roboto'] text-[#55585B] my-auto">(3 Review)</p>
+                </div>
+                <p><span class="text-[#55585b] text-xs font-medium font-['Roboto'] line-through">$120</span><span class="text-[#0989ff] text-[15px] font-bold font-['Roboto']">$103.20</span></p>
+                </div>
+            </div>
+            <div class="w-[305px] border-[2px] border-[#c7c7c7] rounded-lg">
+                <img src="https://i.ibb.co.com/Vt50zR2/Link-headphone-8-png.png" alt="">
+                <hr class="border-[1.2px]">
+                <div class="w-[90%] m-auto py-4">
+                <p class="text-xs font-medium font-['Roboto'] text-[#55585B]">Headphones</p>
+                <p class="text-[#010f1c] text-[15px] font-medium font-['Roboto']">Headphones Wireless.</p>
+                <div class="flex gap-3">
+                    <div id="rating" class="flex space-x-1">
+                    <span data-rating="1" class="cursor-pointer text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="2" class="cursor-pointer  text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="3" class="cursor-pointer  text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="4" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="5" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                      ★
+                    </span>
+                  </div>
+                  <p class="text-xs font-medium font-['Roboto'] text-[#55585B] my-auto">(3 Review)</p>
+                </div>
+                <p><span class="text-[#55585b] text-xs font-medium font-['Roboto'] line-through">$120</span><span class="text-[#0989ff] text-[15px] font-bold font-['Roboto']">$103.20</span></p>
+                </div>
+            </div>
+            <div class="w-[305px] border-[2px] border-[#c7c7c7] rounded-lg">
+                <img src="https://i.ibb.co.com/CWz7f55/Link-mobile-1-png.png" alt="">
+                <hr class="border-[1.2px]">
+                <div class="w-[90%] m-auto py-4">
+                <p class="text-xs font-medium font-['Roboto'] text-[#55585B]">Headphones</p>
+                <p class="text-[#010f1c] text-[15px] font-medium font-['Roboto']">Headphones Wireless.</p>
+                <div class="flex gap-3">
+                    <div id="rating" class="flex space-x-1">
+                    <span data-rating="1" class="cursor-pointer text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="2" class="cursor-pointer  text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="3" class="cursor-pointer  text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="4" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="5" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                      ★
+                    </span>
+                  </div>
+                  <p class="text-xs font-medium font-['Roboto'] text-[#55585B] my-auto">(3 Review)</p>
+                </div>
+                <p><span class="text-[#55585b] text-xs font-medium font-['Roboto'] line-through">$120</span><span class="text-[#0989ff] text-[15px] font-bold font-['Roboto']">$103.20</span></p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="py-[90px] flex justify-between ">
+          <div class="w-[400px]">
+            <div>
+              <p class="text-[#021d35] text-2xl font-bold font-['Roboto'] leading-7">Discount Products</p>
+              <img class="w-16 h-5 -mt-4" src="https://i.ibb.co.com/GPfTpT8/26.png" alt="">
+            </div>
+            <div class="flex gap-[25px] mt-10 mb-[13px]">
+              <img class="w-[121px] h-[140px] bg-[#ECEFF4] rounded-lg" src="https://i.ibb.co.com/xspkzBH/Link-headphone-1-png.png" alt="">
+              <div class="my-auto ">
+                <p class="text-xs font-medium font-['Roboto'] text-[#55585B]">Headphones</p>
+                <p class="text-[#010f1c] text-[15px] font-medium font-['Roboto']">Headphones Wireless.</p>
+                <div class="flex gap-3">
+                    <div id="rating" class="flex space-x-1">
+                    <span data-rating="1" class="cursor-pointer text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="2" class="cursor-pointer  text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="3" class="cursor-pointer  text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="4" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="5" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                      ★
+                    </span>
+                  </div>
+                  <p class="text-xs font-medium font-['Roboto'] text-[#55585B] my-auto">(3 Review)</p>
+                </div>
+                <p><span class="text-[#55585b] text-xs font-medium font-['Roboto'] line-through">$120</span><span class="text-[#0989ff] text-[15px] font-bold font-['Roboto']">$103.20</span></p>
+              </div>
+            </div>
+            <hr>
+            <div class="flex gap-[25px] my-[13px]">
+              <img class="w-[121px] h-[140px] bg-[#ECEFF4] rounded-lg" src="https://i.ibb.co.com/xspkzBH/Link-headphone-1-png.png" alt="">
+              <div class="my-auto ">
+                <p class="text-xs font-medium font-['Roboto'] text-[#55585B]">Headphones</p>
+                <p class="text-[#010f1c] text-[15px] font-medium font-['Roboto']">Headphones Wireless.</p>
+                <div class="flex gap-3">
+                    <div id="rating" class="flex space-x-1">
+                    <span data-rating="1" class="cursor-pointer text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="2" class="cursor-pointer  text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="3" class="cursor-pointer  text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="4" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="5" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                      ★
+                    </span>
+                  </div>
+                  <p class="text-xs font-medium font-['Roboto'] text-[#55585B] my-auto">(3 Review)</p>
+                </div>
+                <p><span class="text-[#55585b] text-xs font-medium font-['Roboto'] line-through">$120</span><span class="text-[#0989ff] text-[15px] font-bold font-['Roboto']">$103.20</span></p>
+              </div>
+            </div>
+            <hr>
+            <div class="flex gap-[25px] my-[13px]">
+              <img class="w-[121px] h-[140px] bg-[#ECEFF4] rounded-lg" src="https://i.ibb.co.com/xspkzBH/Link-headphone-1-png.png" alt="">
+              <div class="my-auto ">
+                <p class="text-xs font-medium font-['Roboto'] text-[#55585B]">Headphones</p>
+                <p class="text-[#010f1c] text-[15px] font-medium font-['Roboto']">Headphones Wireless.</p>
+                <div class="flex gap-3">
+                    <div id="rating" class="flex space-x-1">
+                    <span data-rating="1" class="cursor-pointer text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="2" class="cursor-pointer  text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="3" class="cursor-pointer  text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="4" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="5" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                      ★
+                    </span>
+                  </div>
+                  <p class="text-xs font-medium font-['Roboto'] text-[#55585B] my-auto">(3 Review)</p>
+                </div>
+                <p><span class="text-[#55585b] text-xs font-medium font-['Roboto'] line-through">$120</span><span class="text-[#0989ff] text-[15px] font-bold font-['Roboto']">$103.20</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="w-[400px]">
+            <div>
+              <p class="text-[#021d35] text-2xl font-bold font-['Roboto'] leading-7">Discount Products</p>
+              <img class="w-16 h-5 -mt-4" src="https://i.ibb.co.com/GPfTpT8/26.png" alt="">
+            </div>
+            <div class="flex gap-[25px] mt-10 mb-[13px]">
+              <img class="w-[121px] h-[140px] bg-[#ECEFF4] rounded-lg" src="https://i.ibb.co.com/xspkzBH/Link-headphone-1-png.png" alt="">
+              <div class="my-auto ">
+                <p class="text-xs font-medium font-['Roboto'] text-[#55585B]">Headphones</p>
+                <p class="text-[#010f1c] text-[15px] font-medium font-['Roboto']">Headphones Wireless.</p>
+                <div class="flex gap-3">
+                    <div id="rating" class="flex space-x-1">
+                    <span data-rating="1" class="cursor-pointer text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="2" class="cursor-pointer  text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="3" class="cursor-pointer  text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="4" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="5" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                      ★
+                    </span>
+                  </div>
+                  <p class="text-xs font-medium font-['Roboto'] text-[#55585B] my-auto">(3 Review)</p>
+                </div>
+                <p><span class="text-[#55585b] text-xs font-medium font-['Roboto'] line-through">$120</span><span class="text-[#0989ff] text-[15px] font-bold font-['Roboto']">$103.20</span></p>
+              </div>
+            </div>
+            <hr>
+            <div class="flex gap-[25px] my-[13px]">
+              <img class="w-[121px] h-[140px] bg-[#ECEFF4] rounded-lg" src="https://i.ibb.co.com/xspkzBH/Link-headphone-1-png.png" alt="">
+              <div class="my-auto ">
+                <p class="text-xs font-medium font-['Roboto'] text-[#55585B]">Headphones</p>
+                <p class="text-[#010f1c] text-[15px] font-medium font-['Roboto']">Headphones Wireless.</p>
+                <div class="flex gap-3">
+                    <div id="rating" class="flex space-x-1">
+                    <span data-rating="1" class="cursor-pointer text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="2" class="cursor-pointer  text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="3" class="cursor-pointer  text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="4" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="5" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                      ★
+                    </span>
+                  </div>
+                  <p class="text-xs font-medium font-['Roboto'] text-[#55585B] my-auto">(3 Review)</p>
+                </div>
+                <p><span class="text-[#55585b] text-xs font-medium font-['Roboto'] line-through">$120</span><span class="text-[#0989ff] text-[15px] font-bold font-['Roboto']">$103.20</span></p>
+              </div>
+            </div>
+            <hr>
+            <div class="flex gap-[25px] my-[13px]">
+              <img class="w-[121px] h-[140px] bg-[#ECEFF4] rounded-lg" src="https://i.ibb.co.com/xspkzBH/Link-headphone-1-png.png" alt="">
+              <div class="my-auto ">
+                <p class="text-xs font-medium font-['Roboto'] text-[#55585B]">Headphones</p>
+                <p class="text-[#010f1c] text-[15px] font-medium font-['Roboto']">Headphones Wireless.</p>
+                <div class="flex gap-3">
+                    <div id="rating" class="flex space-x-1">
+                    <span data-rating="1" class="cursor-pointer text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="2" class="cursor-pointer  text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="3" class="cursor-pointer  text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="4" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="5" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                      ★
+                    </span>
+                  </div>
+                  <p class="text-xs font-medium font-['Roboto'] text-[#55585B] my-auto">(3 Review)</p>
+                </div>
+                <p><span class="text-[#55585b] text-xs font-medium font-['Roboto'] line-through">$120</span><span class="text-[#0989ff] text-[15px] font-bold font-['Roboto']">$103.20</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="w-[400px]">
+            <div>
+              <p class="text-[#021d35] text-2xl font-bold font-['Roboto'] leading-7">Discount Products</p>
+              <img class="w-16 h-5 -mt-4" src="https://i.ibb.co.com/GPfTpT8/26.png" alt="">
+            </div>
+            <div class="flex gap-[25px] mt-10 mb-[13px]">
+              <img class="w-[121px] h-[140px] bg-[#ECEFF4] rounded-lg" src="https://i.ibb.co.com/xspkzBH/Link-headphone-1-png.png" alt="">
+              <div class="my-auto ">
+                <p class="text-xs font-medium font-['Roboto'] text-[#55585B]">Headphones</p>
+                <p class="text-[#010f1c] text-[15px] font-medium font-['Roboto']">Headphones Wireless.</p>
+                <div class="flex gap-3">
+                    <div id="rating" class="flex space-x-1">
+                    <span data-rating="1" class="cursor-pointer text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="2" class="cursor-pointer  text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="3" class="cursor-pointer  text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="4" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="5" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                      ★
+                    </span>
+                  </div>
+                  <p class="text-xs font-medium font-['Roboto'] text-[#55585B] my-auto">(3 Review)</p>
+                </div>
+                <p><span class="text-[#55585b] text-xs font-medium font-['Roboto'] line-through">$120</span><span class="text-[#0989ff] text-[15px] font-bold font-['Roboto']">$103.20</span></p>
+              </div>
+            </div>
+            <hr>
+            <div class="flex gap-[25px] my-[13px]">
+              <img class="w-[121px] h-[140px] bg-[#ECEFF4] rounded-lg" src="https://i.ibb.co.com/xspkzBH/Link-headphone-1-png.png" alt="">
+              <div class="my-auto ">
+                <p class="text-xs font-medium font-['Roboto'] text-[#55585B]">Headphones</p>
+                <p class="text-[#010f1c] text-[15px] font-medium font-['Roboto']">Headphones Wireless.</p>
+                <div class="flex gap-3">
+                    <div id="rating" class="flex space-x-1">
+                    <span data-rating="1" class="cursor-pointer text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="2" class="cursor-pointer  text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="3" class="cursor-pointer  text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="4" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="5" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                      ★
+                    </span>
+                  </div>
+                  <p class="text-xs font-medium font-['Roboto'] text-[#55585B] my-auto">(3 Review)</p>
+                </div>
+                <p><span class="text-[#55585b] text-xs font-medium font-['Roboto'] line-through">$120</span><span class="text-[#0989ff] text-[15px] font-bold font-['Roboto']">$103.20</span></p>
+              </div>
+            </div>
+            <hr>
+            <div class="flex gap-[25px] my-[13px]">
+              <img class="w-[121px] h-[140px] bg-[#ECEFF4] rounded-lg" src="https://i.ibb.co.com/xspkzBH/Link-headphone-1-png.png" alt="">
+              <div class="my-auto ">
+                <p class="text-xs font-medium font-['Roboto'] text-[#55585B]">Headphones</p>
+                <p class="text-[#010f1c] text-[15px] font-medium font-['Roboto']">Headphones Wireless.</p>
+                <div class="flex gap-3">
+                    <div id="rating" class="flex space-x-1">
+                    <span data-rating="1" class="cursor-pointer text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="2" class="cursor-pointer  text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="3" class="cursor-pointer  text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="4" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                      ★
+                    </span>
+                    <span data-rating="5" class="cursor-pointer text-gray-400 hover:text-yellow-400">
+                      ★
+                    </span>
+                  </div>
+                  <p class="text-xs font-medium font-['Roboto'] text-[#55585B] my-auto">(3 Review)</p>
+                </div>
+                <p><span class="text-[#55585b] text-xs font-medium font-['Roboto'] line-through">$120</span><span class="text-[#0989ff] text-[15px] font-bold font-['Roboto']">$103.20</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="w-[1320px] m-auto">
+        <div class="flex justify-between">
+          <div>
+              <p class=" text-[#021d35] text-4xl font-bold font-['Roboto']">Latest news & articles</p>
+              <img class="-mt-6" src="https://i.ibb.co.com/GPfTpT8/26.png" alt="">
+          </div>
+          <div class="flex gap-5">
+            <hr class="w-[630px] my-auto border-[1.5px]">
+            <p class="flex gap-2 text-right text-white text-sm font-medium font-['Roboto'] my-auto px-[26px] py-[9px] bg-[#0989FF] rounded-md">View All Deals <img class="w-[15px] h-[10px] my-auto" src="https://i.ibb.co.com/bd4FNv3/29.png" alt=""></p>
+          </div>
+        </div>
+        <div class="mt-[50px] flex justify-between">
+          <div class="w-[420px]">
+            <img src="https://i.ibb.co.com/HNPkJmX/blog-1-jpg.png" alt="">
+            <h2 class="text-[#010f1c] text-lg font-medium font-['Roboto'] leading-snug pt-[21px] pb-2">The Modern Art Clay Ceramics.</h2>
+            <div class="flex gap-[2px]">
+              <img class="w-[14px] h-[12.50px] my-auto" src="https://i.ibb.co.com/DWb8nKn/Symbol.png" alt="">
+              <p>Tablet, News</p>
+            </div>
+            <p class="text-[#55585b] text-sm font-normal font-['Roboto'] leading-tight py-5">The world is an amazing place providing an incredible assortment of interesting locations across.</p>
+            <button class="px-[19px] py-[5px] border-2 rounded-lg flex">Read More<img class="m-auto pl-2" src="https://i.ibb.co.com/g94hRs3/28.png" alt=""></button>
+          </div>
+          <div class="w-[420px]">
+            <img src="https://i.ibb.co.com/HNPkJmX/blog-1-jpg.png" alt="">
+            <h2 class="text-[#010f1c] text-lg font-medium font-['Roboto'] leading-snug pt-[21px] pb-2">The Modern Art Clay Ceramics.</h2>
+            <div class="flex gap-[2px]">
+              <img class="w-[14px] h-[12.50px] my-auto" src="https://i.ibb.co.com/DWb8nKn/Symbol.png" alt="">
+              <p>Tablet, News</p>
+            </div>
+            <p class="text-[#55585b] text-sm font-normal font-['Roboto'] leading-tight py-5">The world is an amazing place providing an incredible assortment of interesting locations across.</p>
+            <button class="px-[19px] py-[5px] border-2 rounded-lg flex">Read More<img class="m-auto pl-2" src="https://i.ibb.co.com/g94hRs3/28.png" alt=""></button>
+          </div>
+          <div class="w-[420px]">
+            <img src="https://i.ibb.co.com/HNPkJmX/blog-1-jpg.png" alt="">
+            <h2 class="text-[#010f1c] text-lg font-medium font-['Roboto'] leading-snug pt-[21px] pb-2">The Modern Art Clay Ceramics.</h2>
+            <div class="flex gap-[2px]">
+              <img class="w-[14px] h-[12.50px] my-auto" src="https://i.ibb.co.com/DWb8nKn/Symbol.png" alt="">
+              <p>Tablet, News</p>
+            </div>
+            <p class="text-[#55585b] text-sm font-normal font-['Roboto'] leading-tight py-5">The world is an amazing place providing an incredible assortment of interesting locations across.</p>
+            <button class="px-[19px] py-[5px] border-2 rounded-lg flex">Read More<img class="m-auto pl-2" src="https://i.ibb.co.com/g94hRs3/28.png" alt=""></button>
+          </div>
+        </div>
+        <div class="py-[75px] flex justify-between">
+          <img class="rounded-lg " src="https://i.ibb.co.com/qn4fnTf/instagram-1-jpg.png" alt="">
+          <img class="rounded-lg " src="https://i.ibb.co.com/CQwX8R9/instagram-2-jpg.png" alt="">
+          <img class="rounded-lg " src="https://i.ibb.co.com/ZffwrLk/instagram-3-jpg.png" alt="">
+          <img class="rounded-lg " src="https://i.ibb.co.com/3T5Czk2/instagram-4-jpg.png" alt="">
+          <img class="rounded-lg w-60 h-[257.14px] " src="https://i.ibb.co.com/9pG1NgK/photo-2024-11-20-20-27-40.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#D6EFE1] ">      
+      <div class="bg-[url(https://i.ibb.co.com/VMyzRyH/subscribe-shape-2-png.png)] bg-no-repeat">
+        <div class="w-[1490px] bg-[url(https://i.ibb.co.com/VBP0m8z/subscribe-shape-4-png.png)] h-[200px] bg-no-repeat bg-right mx-auto">
+          <img class="absolute mt-[102px] -ml-9" src="https://i.ibb.co.com/dDkFnDH/subscribe-shape-2-png.png" alt="">
+          <div class="w-[27px] h-[26px] rounded-full bg-[#CB95DD] absolute mt-[160px]"></div>
+          <div class="w-[1320px] h-[200px] m-auto flex justify-between relative">
+            <div class="my-auto">
+              <p class="text-[#7e7e7e] text-base font-medium font-['Roboto'] uppercase leading-relaxed">Sale 20% off all store</p>
+              <p class="text-[40px] font-extrabold font-['Roboto'] leading-10">Subscribe our Newsletter</p>
+            </div>
+            <div class="my-auto">
+              <img class="absolute ml-48 -mt-14" src="https://i.ibb.co.com/JxfZdjb/plane-png.png" alt="">
+              <input class=" w-[500px] px-[26px] py-[18px] rounded-tl-lg rounded-bl-lg focus:outline-none" name="" id="" placeholder="Enter Your Email...">
+              <button class="-ml-5 py-[18px] px-[40px] bg-black text-white rounded-tr-lg rounded-br-lg">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container m-auto">
+        <div class="mt-[22px] flex justify-between">
+          <div class="w-[280px]">
+            <img class="" src="https://i.ibb.co.com/k6N1KHH/19.png" alt="">
+            <p class="pb-[25px] pt-[18px]">Awesome grocery store website template</p>
+            <div class="flex gap-2  text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal">
+              <img class="w-4 h-[18px] " src="https://i.ibb.co.com/MfJB6Cn/13.png" alt="">
+              <p class="text-[#253d4e] text-[15px] font-semibold font-['Lato'] ">Address:<span class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal">5171 W Campbell Ave </span></p>
+            </div>
+            <p class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal pb-2">undefined Kent, Utah 53127 United States</p>
+
+            <div class="flex gap-2  text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal py-2">
+              <img class="w-4 h-[18px] " src="https://i.ibb.co.com/YbL8NNh/6.png" alt="">
+              <p class="text-[#253d4e] text-[15px] font-semibold font-['Lato'] ">Call Us:<span class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal">(+91) - 540-025-124553</span></p>
+            </div>
+
+            <div class="flex gap-2  text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal py-2">
+              <img class="w-4 h-[18px] " src="https://i.ibb.co.com/G2pgypZ/7.png" alt="">
+              <p class="text-[#253d4e] text-[15px] font-semibold font-['Lato'] ">Email:<span class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal">sale@Nest.com</span></p>
+            </div>
+
+            <div class="flex gap-2  text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal py-2">
+              <img class="w-4 h-[18px] " src="https://i.ibb.co.com/ts4hJyK/4.png" alt="">
+              <p class="text-[#253d4e] text-[15px] font-semibold font-['Lato'] ">Hours:<span class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal">10:00 - 18:00, Mon - Sat</span></p>
+            </div>
+          </div>
+
+          <div class="w-[194px]">
+            <h1 class="text-[#253d4e] text-2xl font-bold font-['Quicksand'] leading-7 pb-[7px]">Company</h1>
+            <p class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal py-[6px]">About Us</p>
+            <p class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal py-[6px]">Delivery Information</p>
+            <p class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal py-[6px]">Privacy Policy</p>
+            <p class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal py-[6px]">Terms & Conditions</p>
+            <p class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal py-[6px]">Contact Us</p>
+            <p class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal py-[6px]">Support Center</p>
+            <p class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal py-[6px]">Careers</p>
+          </div>
+
+          <div class="w-[194px]">
+            <h1 class="text-[#253d4e] text-2xl font-bold font-['Quicksand'] leading-7 pb-[7px]">Account</h1>
+            <p class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal py-[6px]">Sign In</p>
+            <p class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal py-[6px]">View Cart</p>
+            <p class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal py-[6px]">My Wishlist</p>
+            <p class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal py-[6px]">Track My Order</p>
+            <p class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal py-[6px]">Help Ticket</p>
+            <p class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal py-[6px]">Shipping Details</p>
+            <p class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal py-[6px]">Compare products</p>
+          </div>
+
+          <div class="w-[194px]">
+            <h1 class="text-[#253d4e] text-2xl font-bold font-['Quicksand'] leading-7 pb-[7px]">Corporate</h1>
+            <p class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal py-[6px]">Become a Vendor</p>
+            <p class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal py-[6px]">Affiliate Program</p>
+            <p class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal py-[6px]">Farm Business</p>
+            <p class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal py-[6px]">Farm Careers</p>
+            <p class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal py-[6px]">Our Suppliers</p>
+            <p class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal py-[6px]">Accessibility</p>
+            <p class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal py-[6px]">Promotions</p>
+          </div>
+
+          <div class="w-[194px]">
+            <h1 class="text-[#253d4e] text-2xl font-bold font-['Quicksand'] leading-7 pb-[7px]">Popular</h1>
+            <p class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal py-[6px]">Milk & Flavoured Milk</p>
+            <p class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal py-[6px]">Butter and Margarine</p>
+            <p class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal py-[6px]">Eggs Substitutes</p>
+            <p class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal py-[6px]">Marmalades</p>
+            <p class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal py-[6px]">Sour Cream and Dips</p>
+            <p class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal py-[6px]">Tea & Kombucha</p>
+            <p class="text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal py-[6px]">Cheese</p>
+          </div>
+
+          <div class="w-[270px]">
+            <h1 class="text-[#253d4e] text-2xl font-bold font-['Quicksand'] leading-7">Install App</h1>
+            <div class="my-14 flex justify-between">
+              <a href="#"><img src="https://i.ibb.co.com/SmW5nx6/Link-app-store-jpg.png" alt=""></a>
+              <a href="#"><img src="https://i.ibb.co.com/SwrTm0j/Link-google-play-jpg.png" alt=""></a>
+            </div>
+            <p class=" text-[#253d4e] text-[15px] font-normal font-['Lato'] leading-normal">Secured Payment Gateways</p>
+          </div>
+        </div>
+        <hr class="w-[1586px] h-px border-t border-[#bce3c9] mt-[65px] mb-[30px]">
+        <div class="flex justify-between">
+          <div class="w-[270px]">
+            <p class="text-[#7e7e7e] text-sm font-normal font-['Lato'] leading-normal">© 2024,<span class="text-[#3bb77e] text-sm font-semibold font-['Lato'] leading-normal"> Nest </span>- HTML Ecommerce Template
+              All rights reserved</p>
+          </div>
+          <div class="w-[530px] flex gap-[50px]">
+            <div class="flex">
+              <img class="w-9 h-9  m-auto" src="https://i.ibb.co.com/vJ1nYVb/9.png" alt="">
+              <div class="px-4">
+                  <p class="text-[#3BB77E] font-['quicksand'] text-[26px] font-bold tracking-widest">9110-911</p>
+                  <p class="text-xs font-['lato'] text-[#7E7E7E] font-medium tracking-wider ">Working 8:00 - 22:00</p>
+              </div>
+            </div>
+            <div class="flex">
+              <img class="w-9 h-9  m-auto" src="https://i.ibb.co.com/vJ1nYVb/9.png" alt="">
+              <div class="px-4">
+                  <p class="text-[#3BB77E] font-['quicksand'] text-[26px] font-bold tracking-widest">9169-911</p>
+                  <p class="text-xs font-['lato'] text-[#7E7E7E] font-medium tracking-wider ">24/7 Support Center</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-[260px] ">
+            <div class="flex justify-between">
+              <p class="text-right text-[#253d4e] text-base font-bold font-['Quicksand'] leading-tight my-auto">Follow Us</p>
+              <div class="w-[175px] flex justify-between">
+                <a class="rounded-full bg-[#3BB77E]" href="#"><img class="p-[7px]" src="https://i.ibb.co.com/Nrbnxsm/8.png" alt=""></a>
+                <a class="rounded-full bg-[#3BB77E]" href="#"><img class="p-[7px]" src="https://i.ibb.co.com/HrG9D2c/15.png" alt=""></a>
+                <a class="rounded-full bg-[#3BB77E]" href="#"><img class="p-[7px]" src="https://i.ibb.co.com/p1KF5YM/12.png" alt=""></a>
+                <a class="rounded-full bg-[#3BB77E]" href="#"><img class="p-[7px]" src="https://i.ibb.co.com/yqB7wQj/14.png" alt=""></a>
+                <a class="rounded-full bg-[#3BB77E]" href="#"><img class="p-[7px]" src="https://i.ibb.co.com/0tRTkzX/17.png" alt=""></a>
+              </div>
+            </div>
+            <p class="text-right text-[#7e7e7e] text-sm font-normal font-['Lato'] leading-norma">Up to 15% discount on your first subscribe</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
 </body>
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="src/output.css">
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 </html>
